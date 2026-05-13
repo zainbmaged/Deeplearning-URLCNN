@@ -1,0 +1,16 @@
+,legitimate_mean,phishing_mean,difference
+url_length,87.08,66.311,-20.769
+hostname_length,17.055,26.071,9.016
+path_length,33.049,22.785,-10.264
+query_length,28.604,8.32,-20.284
+num_dots,2.612,2.263,-0.349
+num_hyphens,2.26,0.82,-1.44
+num_digits,11.24,7.21,-4.03
+digit_ratio,0.092,0.087,-0.005
+has_https,0.873,0.896,0.022
+has_ip_address,0.0,0.008,0.008
+subdomain_depth,0.955,0.974,0.018
+path_depth,2.452,1.172,-1.279
+hostname_has_hyphen,0.102,0.408,0.306
+shannon_entropy,4.413,4.42,0.008
+suspicious_keyword_count,0.064,0.066,0.002

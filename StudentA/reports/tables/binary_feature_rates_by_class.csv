@@ -1,0 +1,5 @@
+,Legitimate,Phishing
+has_https,0.873,0.896
+has_ip_address,0.0,0.008
+hostname_has_hyphen,0.102,0.408
+tld_in_path,0.014,0.004

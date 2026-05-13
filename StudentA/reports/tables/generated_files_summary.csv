@@ -1,0 +1,35 @@
+file,description
+data/processed/clean_urls.csv,Cleaned unique URL dataset
+data/splits/train.csv,Training split with raw URLs
+data/splits/val.csv,Validation split with raw URLs
+data/splits/test.csv,Original test split with raw URLs
+data/splits/test_balanced.csv,Balanced 50/50 evaluation test set
+data/splits/test_imbalanced_80_20.csv,Imbalanced 80/20 evaluation test set
+data/features/train_features.csv,Unscaled handcrafted train features
+data/features/val_features.csv,Unscaled handcrafted validation features
+data/features/test_features.csv,Unscaled handcrafted test features
+data/features/test_balanced_features.csv,Unscaled balanced test features
+data/features/test_imbalanced_80_20_features.csv,Unscaled imbalanced test features
+data/features_scaled/train_features_scaled.csv,Scaled train features
+data/features_scaled/val_features_scaled.csv,Scaled validation features
+data/features_scaled/test_features_scaled.csv,Scaled test features
+data/features_scaled/test_balanced_features_scaled.csv,Scaled balanced test features
+data/features_scaled/test_imbalanced_80_20_features_scaled.csv,Scaled imbalanced test features
+data/features_scaled/train_features_smote_scaled.csv,SMOTE-balanced scaled train features for classical ML
+models/standard_scaler.joblib,Scaler fitted on training features only
+reports/tables/split_summary.csv,Split statistics for report
+reports/tables/feature_summary_by_class.csv,Mean feature comparison by class
+reports/tables/binary_feature_rates_by_class.csv,Binary URL feature rates by class
+reports/tables/top_legitimate_tlds.csv,Top TLDs in legitimate training URLs
+reports/tables/top_phishing_tlds.csv,Top TLDs in phishing training URLs
+reports/tables/feature_correlation_matrix.csv,Correlation matrix for selected features
+reports/tables/generated_files_summary.csv,Summary of generated pipeline files
+reports/figures/class_distribution.png,Class distribution after cleaning
+reports/figures/url_length_by_class.png,URL length boxplot by class
+reports/figures/url_length_by_class_capped.png,Capped URL length boxplot by class
+reports/figures/shannon_entropy_by_class.png,Shannon entropy boxplot by class
+reports/figures/digit_ratio_by_class.png,Digit ratio boxplot by class
+reports/figures/binary_feature_rates_by_class.png,Binary feature rates by class
+reports/figures/top_phishing_tlds.png,Top phishing TLDs plot
+reports/figures/top_legitimate_tlds.png,Top legitimate TLDs plot
+reports/figures/feature_correlation_heatmap.png,Selected feature correlation heatmap

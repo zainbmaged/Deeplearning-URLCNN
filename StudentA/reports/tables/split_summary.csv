@@ -1,0 +1,4 @@
+split,rows,legitimate_count,phishing_count,phishing_ratio
+train,90843,52480,38363,0.4223
+validation,19466,11246,8220,0.4223
+test,19467,11246,8221,0.4223
