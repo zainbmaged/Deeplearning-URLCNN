@@ -1,0 +1,6 @@
+family,None,SMOTE,Weighted,Ensemble
+LR,0.8067,0.8027,0.8026,
+SVM,0.7965,0.7996,0.7977,
+RF,0.9506,,0.9504,
+XGB,0.9454,,0.9483,
+Stacking,,,,0.9519
