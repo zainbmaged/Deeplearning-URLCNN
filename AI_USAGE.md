@@ -46,6 +46,8 @@ The main AI-assisted areas were:
 - SMOTE usage clarification,
 - EDA figure planning,
 - final notebook readability review.
+- final notebook additions review (ablation files, fusion handoff, error analysis cell)
+- report writing review for Discussion and Limitations sections
 
 ## Final Note
 

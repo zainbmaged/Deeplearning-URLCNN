@@ -246,6 +246,19 @@ It should not be used for the character-level CNN/RNN because SMOTE creates synt
 
 ---
 
+## Feature Ablation Files
+
+Top-5 feature subset files for Student C's ablation study.
+
+Features: path_length, hostname_length, shannon_entropy, path_depth, url_length
+
+Files:
+data/features_scaled_ablation/train_top5_features.csv
+data/features_scaled_ablation/val_top5_features.csv
+data/features_scaled_ablation/test_top5_features.csv
+
+---
+
 ## Recommended Use by Team Members
 
 ### Student B — Deep Learning

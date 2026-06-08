@@ -249,6 +249,23 @@ We also added supporting documentation:
 
 ---
 
+## Entry 12 — Feature ablation files and fusion handoff
+
+We created top-5 feature ablation files (path_length, hostname_length,
+shannon_entropy, path_depth, url_length) for Student C's ablation study.
+We added a utility function confirming the feature vector format for
+Student B's Hybrid Feature Fusion model.
+
+---
+
+## Entry 13 — Error analysis setup and final report writing
+
+We prepared the error analysis framework using Student C's FP/FN URL lists.
+We wrote the Discussion, Limitations, and Conclusion sections for the final report.
+Final pipeline checks confirmed all 37 documented output files.
+
+---
+
 ## Current status
 
 Student A data preparation is complete and ready for team integration.
