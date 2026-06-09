@@ -1,0 +1,5 @@
+model,ms_per_url
+LR (no handling),0.0031
+RF (no handling),0.3631
+XGB (weighted),0.0336
+Stacking Ensemble,0.3367
