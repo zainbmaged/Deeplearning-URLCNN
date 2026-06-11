@@ -34,7 +34,7 @@ AI tools were used to:
 All bugs below were encountered, identified, and a student fix was attempted first.
 AI assistance was used only to confirm or improve the fix.
 
-**Bug 1 — `LinearSVC` has no `predict_proba()` method (Major)**
+**Bug 1: `LinearSVC` has no `predict_proba()` method (Major)**
 
 Student's observation: the unified evaluation function failed with
 `AttributeError: 'LinearSVC' has no attribute 'predict_proba'`
@@ -49,7 +49,7 @@ calibrated probability output without skipping the metric.
 Decision: The AI suggestion was accepted because it preserves the AUC comparison
 across all models.
 
-**Bug 2 — Validation set not being evaluated on the original (unscaled) test set (Minor)**
+**Bug 2: Validation set not being evaluated on the original (unscaled) test set (Minor)**
 
 The student identified the best model inference in the error analysis section
 used the wrong feature matrix (scaled instead of unscaled for RF/Stacking).
@@ -57,7 +57,7 @@ used the wrong feature matrix (scaled instead of unscaled for RF/Stacking).
 AI confirmed: add a flag `use_unscaled = any(tag in best_name for tag in ["RF", "XGB", "Stack"]).`
 to select the correct feature matrix per model.
 
-**Bug 3 — `f1_score` zero-division warning in ablation study (Minor)**
+**Bug 3: `f1_score` zero-division warning in ablation study (Minor)**
 
 Student observed `UndefinedMetricWarning` when computing F1 on small feature subsets.
 
@@ -82,7 +82,7 @@ AI tools were used for minor grammar and phrasing review of:
 - Report sections after being written manually.
 - These README and LOG.md files.
 
-All content was written manually first. AI reviewed phrasing only — it did not
+All content was written manually first. AI reviewed phrasing only; it did not
 generate report sections or analytical conclusions.
 
 ---
