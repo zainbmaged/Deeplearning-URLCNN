@@ -79,10 +79,10 @@ produced by Student A's pipeline (`StudentA/notebook`).
 
 **23 handcrafted features used:**
 `url_length`, `hostname_length`, `path_length`, `query_length`, `num_dots`,
-`num_hyphens`, `num_slashes`, `num_at`, `num_question_marks`, `num_equals`,
-`num_percent`, `num_digits`, `digit_ratio`, `has_https`, `has_ip`,
+`num_hyphens`, `num_slashes`, `num_at_symbol`, `num_question_marks`, `num_equals`,
+`num_percent`, `num_digits`, `digit_ratio`, `has_https`, `has_ip_address`,
 `subdomain_depth`, `path_depth`, `hostname_has_hyphen`, `shannon_entropy`,
-`suspicious_keyword_count`, `num_underscores`, `num_ampersands`, `num_tildes`.
+`suspicious_keyword_count`, `num_underscores`,  `num_ampersand`, `tld_in_path`.
 
 ---
 
