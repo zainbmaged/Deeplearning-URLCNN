@@ -9,7 +9,7 @@
 - ChatGPT (OpenAI)
 ---
 
-## Allowed Uses — With Disclosure
+## Allowed Uses: With Disclosure
 
 The following uses comply with the course GenAI policy (brainstorming, debugging
 assistance after the student attempts a fix first, and grammar/phrasing improvements.
@@ -86,7 +86,7 @@ All content was written manually first. AI reviewed phrasing only — it did not
 generate report sections or analytical conclusions.
 
 ---
-## Not Allowed — Confirmed Not Used
+## Not Allowed: Confirmed Not Used
 
 In compliance with the course GenAI policy, AI tools were **not** used to:
 
