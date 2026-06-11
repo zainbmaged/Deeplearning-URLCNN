@@ -30,7 +30,7 @@
 
 ---
 
-## Week 2: 13 May 2026 to 16 May 2026
+## Week 2: 13 May 2026 to 15 May 2026
 
 ### Progress
 - Implemented all 10 model configurations (4 families × 3 strategies, minus SMOTE for RF/XGB).
@@ -94,8 +94,10 @@
   3. Document at least two implementation challenges.
 
 ---
+## Egypt observed a six-day official public holiday for Eid al-Adha, which ran from Tuesday, May 26, through Sunday, May 31, 2026
+---
 
-## Week 3: 19 May 2026 to 22 May 2026
+## Week 3&4: 1 June 2026 to 9 June 2026
 
 ### Progress
 - Built and trained the Stacking Ensemble.
@@ -104,6 +106,10 @@
 - Completed threshold sensitivity analysis, confusion matrices, ROC curves, error analysis,
   and CPU inference time benchmark.
 - Verified all 19 output files using the notebook's final deliverables checklist.
+- Built the joint classical vs. deep learning comparison table.
+- Wrote all assigned final report sections.
+- Completed all Student C presentation slides.
+- Confirmed all 19 deliverable files and committed to the repository.
 
 ### Key Decisions
 - **Stacking Ensemble design:**
@@ -119,6 +125,15 @@
 - **Threshold recommendation split by deployment context:**
   - Corporate firewall (minimise FNR): threshold 0.30–0.40, peak F1 at 0.40 = 0.9539.
   - Browser plugin (balance FPR/FNR): default threshold 0.50, F1 = 0.9519.
+- **Joint comparison table method:** classical results merged from `baseline_all_results.csv`;
+  deep learning results read from Student B's three output CSVs
+  (`results_original_test_distribution.csv`, etc...). Both datasets were aligned on the same
+  column schema before concatenation.
+- **TA feedback addressed:**
+  1. GitHub link added to Section I.
+  2. Seven formal LaTeX metric equations added to Section V.
+  3. Two implementation challenges are documented in Section V.
+  4. Complete The Final Report
 
 ### Stacking Ensemble Results
 
@@ -171,36 +186,6 @@
 Key finding: the top-5 features capture 96.3% of the All-23 test F1.
 Adding all 23 features gains +3.52 pp. This motivated Student B's Hybrid Fusion model.
 
-### Issues Encountered
-- **Issue:** Stacking Ensemble training time on CPU was significantly longer than expected
-  (339.2 seconds). This is due to 5-fold cross-validation across three base learners on a
-  training set of ~90,000 samples.
-  **Resolution:** No workaround was applied (cannot reduce CV below 5 without risking
-  meta-learner overfitting). The 339.2 s training time is acceptable since training is
-  a one-time cost; inference remains at 0.3367 ms/URL.
-
----
-## Egypt observed a six-day official public holiday for Eid al-Adha, which ran from Tuesday, May 26, through Sunday, May 31, 2026
-
-## Week 4: 04 June 2026 to 11 June 2026
-
-### Progress
-- Built the joint classical vs. deep learning comparison table.
-- Wrote all assigned final report sections.
-- Completed all Student C presentation slides.
-- Confirmed all 19 deliverable files and committed to the repository.
-
-### Key Decisions
-- **Joint comparison table method:** classical results merged from `baseline_all_results.csv`;
-  deep learning results read from Student B's three output CSVs
-  (`results_original_test_distribution.csv`, etc...). Both datasets were aligned on the same
-  column schema before concatenation.
-- **TA feedback addressed:**
-  1. GitHub link added to Section I.
-  2. Seven formal LaTeX metric equations added to Section V.
-  3. Two implementation challenges are documented in Section V.
-  4. Complete The Final Report
-
 ### Final Joint Comparison (original test set, best per family)
 
 | Model | F1-score | ms / URL | Type |
@@ -211,10 +196,16 @@ Adding all 23 features gains +3.52 pp. This motivated Student B's Hybrid Fusion 
 | CNN-BiLSTM | 0.9920 | 6.2729 | Deep |
 | Stacking Ensemble | 0.9519 | 0.3367 | Classical |
 | RF (no handling) | 0.9506 | 0.3631 | Classical |
-| XGB (weighted) | 0.9483 | 0.0110 | Classical |
+| XGB (weighted) | 0.9483 | 0.0110 | Classical | 
+
 
 ### Issues Encountered
-- No blocking issues in Week 4. All sections completed on schedule.
+- **Issue:** Stacking Ensemble training time on CPU was significantly longer than expected
+  (339.2 seconds). This is due to 5-fold cross-validation across three base learners on a
+  training set of ~90,000 samples.
+  **Resolution:** No workaround was applied (cannot reduce CV below 5 without risking
+  meta-learner overfitting). The 339.2 s training time is acceptable since training is
+  a one-time cost; inference remains at 0.3367 ms/URL.
 
 ---
 
